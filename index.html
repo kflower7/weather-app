@@ -4,25 +4,115 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GitHub Example</title>
+    <title>Simple Weather</title>
+
     <link rel="stylesheet" href="src/style.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/1e32dfa7ee.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
   <body>
-    <h1>Hello GitHub</h1>
-
-    <img
-      src="https://i.ytimg.com/vi/0nqJKEh3YCc/maxresdefault.jpg"
-      alt="Git Push Pull Commands"
-      width="400"
-    />
-    <br />
-    <br />
-    <form>
-      <input type="text" placeholder="Enter your email" />
-      <input type="password" placeholder="Enter your password" />
-      <input type="submit" value="Login" />
-    </form>
-
+    <div class="card-group" style="width: 130rem">
+      <div class="card">
+        <img
+          src="images/sunset.jpg"
+          width="700"
+          class="card-img-top"
+          alt="pink mountains"
+        />
+        <div class="card-body">
+          <h1 class="card-title">Weather Made Simple</h1>
+          <form class="search-bar">
+            <input
+              type="text"
+              placeholder="Search location here"
+              autocomplete="off"
+              autofocus="off"
+              id="search-city"
+            />
+            <input type="submit" value="🔍" />
+          </form>
+          <h2 class="current-location-bar">
+            <span id="current-city-display">Current City</span> <br />
+            <span id="current-temperature-display">°C</span>
+          </h2>
+          <a href="#">
+            <i class="fa-solid fa-location-dot" id="current-location"></i>
+          </a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h3 class="card-title location-name">Barcelona</h3>
+          <p class="card-text" id="data">
+            Tuesday 16:53 <br />
+            August 9, 2022 <br />
+            <span id="search-forecast">Sunny</span>
+          </p>
+          <h4 class="location-temperature">
+            <span class="main-degree" id="main-degree">31</span>
+            <span class="main-celsius" id="main-celsius"
+              ><a href="#" id="convert-celsius">°C</a>|</span
+            ><span class="main-fahrenheit" id="main-fahrenheit"
+              ><a href="#" id="convert-fahrenheit">°F</a></span
+            >
+          </h4>
+          <i class="fa-solid fa-sun sunny"></i>
+          <p class="high-low">32°C | <span class="low-temp">23°C</span></p>
+          <p class="specific">
+            Precipitation: 10% <br />
+            Humidity: 51% <br />
+            Wind: 16 km/h
+          </p>
+          <div class="row">
+            <div class="col-2">
+              WED <br /><br />
+              <i class="fa-solid fa-cloud-sun wed"></i> <br /><br />
+              32 | <span class="low-temp">23</span>
+            </div>
+            <div class="col-2">
+              THUR <br /><br />
+              <i class="fa-solid fa-cloud-sun thur"></i> <br /><br />
+              32 | <span class="low-temp">23</span>
+            </div>
+            <div class="col-2">
+              FRI <br /><br />
+              <i class="fa-solid fa-cloud-sun fri"></i> <br /><br />
+              32 | <span class="low-temp">22</span>
+            </div>
+            <div class="col-2">
+              SAT <br /><br />
+              <i class="fa-solid fa-cloud-rain sat"></i> <br /><br />
+              29 | <span class="low-temp">21</span>
+            </div>
+            <div class="col-2">
+              SUN <br /><br />
+              <i class="fa-solid fa-cloud-rain sun"></i> <br /><br />
+              27 | <span class="low-temp">21</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="src/script.js"></script>
   </body>
 </html>
