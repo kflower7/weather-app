@@ -1,13 +1,143 @@
 h1 {
-  text-align: center;
-  color: red;
+  color: white;
+  font-family: "Comfortaa", cursive;
+  position: relative;
+  bottom: 300%;
+  left: 20%;
 }
 
-form {
+h2 {
+  font-family: "Comfortaa", cursive;
   text-align: center;
+  position: relative;
+  bottom: 455%;
+  left: 35%;
 }
 
-img {
+h3 {
+  font-family: "Comfortaa", cursive;
+  background: rgb(128, 85, 140);
+  color: rgb(247, 246, 242);
+  margin-right: 75%;
+  border: 1px solid rgb(128, 85, 140);
+  border-radius: 5px;
+}
+
+h4 {
+  font-family: "Comfortaa", cursive;
+  position: relative;
+  left: 36%;
+  bottom: 15%;
+}
+
+.location-name {
+  font-size: 40px;
+}
+
+#data {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  color: black;
+  margin-right: 75%;
+  border: 2px solid rgb(128, 85, 140);
+  border-radius: 5px;
+  padding-left: 5px;
+}
+
+.main-fahrenheit,
+.main-celsius {
+  font-size: 35px;
+  position: relative;
+  bottom: 40px;
+  right: 20px;
+}
+
+#convert-fahrenheit {
+  color: rgb(175, 122, 179);
+  text-decoration: none;
+}
+
+#convert-celsius {
+  color: black;
+  text-decoration: none;
+}
+
+.current-location-bar {
+  font-size: 16px;
+  color: white;
+  border: 1px solid white;
+  border-radius: 20px;
+  margin-left: 350px;
+  margin-right: 350px;
+  margin-bottom: 15px;
+}
+
+.search-bar {
   display: block;
-  margin: 0 auto;
+  position: relative;
+  bottom: 300%;
+  left: 28%;
+}
+
+.sunny {
+  font-size: 120px;
+  color: rgb(228, 209, 146);
+  position: relative;
+  left: 7%;
+  bottom: 10%;
+}
+
+#current-location {
+  color: white;
+  position: relative;
+  font-size: 20px;
+  bottom: 485%;
+  left: 72%;
+}
+
+.location-temperature {
+  font-size: 90px;
+}
+
+.high-low {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  position: relative;
+  bottom: 29%;
+  left: 37%;
+}
+
+.low-temp {
+  color: rgb(130, 115, 151);
+}
+
+.specific {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  position: relative;
+  bottom: 29%;
+  left: 37%;
+}
+
+.row {
+  font-family: "Comfortaa", cursive;
+  position: relative;
+  bottom: 15%;
+  left: 5%;
+}
+
+.wed,
+.thur,
+.fri {
+  text-align: center;
+  font-size: 60px;
+  color: rgb(203, 160, 174);
+}
+
+.sat,
+.sun {
+  text-align: center;
+  font-size: 60px;
+  color: rgb(175, 122, 179);
 }
